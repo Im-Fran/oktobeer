@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import {menuData, menuCategories, formatPrice, MenuItem} from "@/lib/menu-data"
-import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { Card } from "@/components/ui/card"
 
