@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Melting-Letter';
+  src: url('/fonts/Melting-Letter.ttf');
+}
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    --primary: 40 100% 60%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+
+    --radius: 0.5rem;
+
+    --font-melting: 'Melting-Letter';
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 40 100% 60%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  .font-bebas {
+    font-family: var(--font-bebas-neue);
+  }
+
+  .font-melting {
+    font-family: var(--font-melting);
+  }
+}
+
+.menu-section-title {
+  @apply font-melting text-5xl md:text-6xl lg:text-7xl text-primary mb-8 text-center;
+}
+
+.menu-title {
+  @apply font-melting text-6xl md:text-7xl lg:text-8xl text-primary mb-8 text-center tracking-wider;
+}
+
+.menu-category {
+  @apply font-bebas text-3xl md:text-4xl text-primary mb-4;
+}
+
+.menu-item {
+  @apply border border-primary/20 rounded-lg p-4 bg-black/80 hover:bg-black/90 transition-all;
+}
+
+.menu-item-name {
+  @apply font-bebas text-xl text-primary mb-1;
+}
+
+.menu-item-price {
+  @apply text-white font-bold;
+}
+
+.menu-item-description {
+  @apply text-sm text-gray-400 mt-1;
+}
+
+.category-button {
+  @apply font-bebas text-lg px-4 py-2 rounded-full border-2 border-primary text-primary
+  bg-black/80 hover:bg-primary hover:text-black transition-all min-w-[180px];
+}
+
+.category-button.active {
+  @apply bg-primary text-black;
+}
+
+.hero-section {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("/hero-background.jpg");
+  background-size: cover;
+  background-position: center;
+  @apply py-20;
+}
+
