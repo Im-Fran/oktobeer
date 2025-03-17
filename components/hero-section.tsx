@@ -15,7 +15,7 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-20 md:py-32 flex flex-col items-center text-center">
-        <h1 className="text-7xl md:text-8xl text-white mb-16 md:mb-20 font-melting max-w-2xl text-center -rotate-12">BIENVENID@ SOBRINEKE</h1>
+        <h1 className="text-5xl md:text-8xl text-white mb-16 md:mb-20 font-melting max-w-2xl text-center -rotate-12">BIENVENID@ SOBRINEKE</h1>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button asChild size="lg" className="bg-primary text-black hover:bg-primary/80">
             <a href="#menu">Ver Menú</a>

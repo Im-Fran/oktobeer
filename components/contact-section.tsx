@@ -31,7 +31,7 @@ const ContactSection = () => {
                 Mantente al día con nuestras promociones, eventos especiales y novedades siguiéndonos en nuestras redes
                 sociales.
               </p>
-              <div className="flex space-x-4">
+              <div className="flex flex-wrap gap-4">
                 <Link
                   href="https://www.facebook.com/OKtobeercalama/"
                   target="_blank"

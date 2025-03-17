@@ -108,7 +108,7 @@
 }
 
 .menu-item-name {
-  @apply font-bebas text-xl text-primary mb-1;
+  @apply font-bebas text-lg md:text-xl text-primary mb-1;
 }
 
 .menu-item-price {
@@ -116,12 +116,11 @@
 }
 
 .menu-item-description {
-  @apply text-sm text-gray-400 mt-1;
+  @apply text-xs md:text-sm text-gray-400 mt-1;
 }
 
 .category-button {
-  @apply font-bebas text-lg px-4 py-2 rounded-full border-2 border-primary text-primary
-  bg-black/80 hover:bg-primary hover:text-black transition-all min-w-[180px];
+  @apply font-bebas text-sm md:text-lg px-4 py-2 rounded-full border-2 border-primary text-primary bg-black/80 hover:bg-primary hover:text-black transition-all;
 }
 
 .category-button.active {
